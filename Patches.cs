@@ -60,9 +60,11 @@ namespace BetterPorts
                     {
                         drydock = UnityEngine.Object.Instantiate<GameObject>(drydockAsset, __instance.transform);
 
-                        Transform island = GameObject.Find("island 15 M (Fort)").transform;
-                        drydock.transform.SetParent(island);
+                        Transform fa = GameObject.Find("island 15 M (Fort)").transform;
+                        drydock.transform.SetParent(fa);
                         drydock.transform.localPosition = new Vector3(156.6f, 0f, 21.2f);
+
+                        IslandManager.InitialiseShaders(drydock.transform);
 
                         Debug.LogWarning("[Better Ports] Drydock loaded at Fort Aestrin");
                     }

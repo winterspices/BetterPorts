@@ -10,12 +10,12 @@ using UnityEngine.SceneManagement;
 namespace BetterPorts
 {
     [BepInDependency("com.winter.customislandapi")]
-    [BepInPlugin("com.winter.betterports", "Better Ports", "1.0")]
+    [BepInPlugin("com.winter.betterports", "Better Ports", "1.0.1")]
     public class PortPatcher : BaseUnityPlugin
     {
         public const string pluginGuid = "com.winter.betterports";
         public const string pluginName = "Better Ports";
-        public const string pluginVersion = "1.0";
+        public const string pluginVersion = "1.0.1";
 
         private void Awake()
         {

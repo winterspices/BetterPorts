@@ -7,8 +7,8 @@
     <ProjectGuid>{188FC417-96F9-412E-8EEB-59AABC0E5455}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Deep_Ports</RootNamespace>
-    <AssemblyName>Deep Ports</AssemblyName>
+    <RootNamespace>BetterPorts</RootNamespace>
+    <AssemblyName>BetterPorts</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -39,6 +39,9 @@
     </Reference>
     <Reference Include="BepInEx">
       <HintPath>..\..\C#\SextantMod\Libraries\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomIslandAPI">
+      <HintPath>..\CustomIslandFramework\bin\Debug\CustomIslandAPI.dll</HintPath>
     </Reference>
     <Reference Include="Oculus.VR">
       <HintPath>W:\Steam\steamapps\common\Sailwind\Sailwind_Data\Managed\Oculus.VR.dll</HintPath>
@@ -80,7 +83,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IslandPortPatcher.cs" />
     <Compile Include="Patches.cs" />
+    <Compile Include="MethodPatches.cs" />
+    <Compile Include="PortLadder.cs" />
     <Compile Include="PortPatcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
